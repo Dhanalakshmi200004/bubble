@@ -1,0 +1,18 @@
+.bubble-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f8ff; 
+    margin: 0;
+}
+
+.bubble {
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    background-color: rgba(0, 191, 255, 0.2); 
+    border-radius: 50%;
+    backdrop-filter: blur(8px); 
+    pointer-events: none;
+}
