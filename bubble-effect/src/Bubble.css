@@ -1,3 +1,4 @@
+
 .bubble-container {
     position: relative;
     width: 100vw;
@@ -11,8 +12,17 @@
     position: absolute;
     width: 150px; 
     height: 150px; 
-    background-color: rgba(0, 191, 255, 0.2); 
+    background: linear-gradient(180deg, rgba(0, 191, 255, 0.5), rgba(255, 255, 255, 0.1));
     border-radius: 50%;
-    backdrop-filter: blur(8px); 
-    pointer-events: none;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.7); 
+    pointer-events: none; 
+    animation: float 3s ease-in-out infinite; 
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } 
+    100% { transform: translateY(0); } 
 }

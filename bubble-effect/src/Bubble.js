@@ -5,15 +5,15 @@ function Bubble() {
   const [position, setPosition] = useState({ x: 100, y: 100 });
 
   const generateRandomPosition = () => {
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+    const x = Math.random() * (window.innerWidth - 150);
+    const y = Math.random() * (window.innerHeight - 150);
     return { x, y };
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       setPosition(generateRandomPosition());
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
